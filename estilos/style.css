@@ -30,7 +30,7 @@ section#login {
     width: 250px;
     border-radius: 20px;
     overflow: hidden; /*esconde tudo que estiver fora da borda*/
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.329);
     
     transition: width 0.3s, height 0.3s; /*define o tempo de transição do tamanho da section quando mudar o tamanho da tela na media query*/
     transition-timing-function: ease; /*suaviza a transição*/
@@ -57,4 +57,61 @@ div#formulario h1 {
 
 div#formulario p {
     font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #00b66a23;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    /*background-color: hsla(179, 98%, 18%, 0.843);
+    color: #ffffff;*/
+    background-color: #008F8C;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+form > input[type=submit]:hover {
+    /* background-color:  hsl(179, 98%, 18%);
+    color: #2bdfdc; */
+    background-color:#006d6b;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border: 1px  solid #008F8C;
+    text-decoration: none;
+    color: hsl(179, 98%, 18%);
+    border-radius: 5px;
+    
+}
+
+form > a.botao:hover {
+    background-color:#006d6b;
+    color: #00b6b3;
+}
+
+form > a.botao > span {
+    
 }
