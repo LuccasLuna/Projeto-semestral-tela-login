@@ -1,1 +1,48 @@
 @charset "UTF-8";
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #008F8C;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute; /* estabelece um posição absoluta p/ o objeto (isto é, fixa) */
+    top: 50%;  /* define a posição vertical do objeto a partir da ponta superior esquerda */
+    left: 50%; /* define a posição horizontal do objeto a partir da ponta superior esquerda */
+    transform: translate(-50%, -50%); /* redefine metade da posição do objeto  */
+    
+    background-color: white;
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden; /*esconde tudo que estiver fora da borda*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+
+section#login > div#imagem {
+    display: block;
+    background: url(../imagens/pexels-enrique-hoyos-12172754.jpg) no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 200px; 
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+    
+}
